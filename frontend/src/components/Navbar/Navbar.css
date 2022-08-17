@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaina+2:wght@700&family=Merriweather&family=Open+Sans:wght@600&family=PT+Sans&family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&family=Ubuntu:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #171648;
+    height: 50px;
+    color: white;
+    padding: 10px 70px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.8);
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: red;
+    width: 110px;
+    height: 80px;
+    position: absolute;
+    right: 36px;
+    border-radius: 5px;
+
+}
+.account .li{
+    text-decoration: none;
+}
+.account p{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+.account p:hover{
+    color: black;
+}
+.buttons .acc-icon{
+    font-size: 50px;
+    cursor: pointer;
+}
+.user-profile{
+    min-height: 92vh;
+    background: #171648;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-box{
+    min-width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+.box1{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.avatar{
+    width: 100%;
+}
+@media(max-width:440px){
+    .navbar{
+        padding: 10px;
+    }
+    .logo h1{
+        font-size: 1.6rem;
+    }
+    .buttons .acc-icon{
+        font-size: 30px;
+    }
+    .account{
+        right: 0;
+        margin-top: 8px;
+        width: 90px;
+        height: 70px;
+    }
+    .account p{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+}

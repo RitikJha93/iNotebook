@@ -1,0 +1,105 @@
+.home-container{
+    min-height: 92vh;
+    background-color: #171648;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.note-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+}
+.note-box textarea {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    width: 550px;
+    height: 120px;
+    border: 0;
+    outline: none;
+    font-size: 1.5rem;
+    resize: none;
+
+}
+.note-box input{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    width: 550px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.note-box .icon{
+    color: yellow;
+    cursor: pointer;
+    font-size: 50px;
+}
+.note-box .icon:hover{
+    color: rgb(200, 200, 21);
+}
+.notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-items: center;
+    margin-top: 5px;
+}
+.notes1{
+    width: 300px;
+    min-height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.text{
+    inline-size: 250px;
+    overflow-wrap: break-word;
+}
+.edit-icon{
+    color: blue;
+    cursor: pointer;
+}
+.delete-icon{
+    color: red;
+    cursor: pointer;
+    margin-left: 15px;
+}
+@media(max-width:690px){
+    .note-box input{
+        width: 400px;
+    }
+    .note-box textarea{
+        width: 400px;
+    }
+}
+@media(max-width:480px){
+    .note-box input{
+        width: 280px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .note-box textarea{
+        width: 280px;
+        height: 80px;
+        font-size: 1rem;
+    }
+    .note-box .icon{
+        font-size: 40px;
+    }
+    .notes1{
+        width: 280px;
+        min-height: 120px;
+    }
+}
