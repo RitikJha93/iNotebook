@@ -15,7 +15,7 @@ const Login = () => {
   const [isSubmit,setIsSubmit] = useState(false);
 
   const handleClick = async()=>{
-    const response = await fetch(`http://localhost:5000/api/auth/login`, {
+    const response = await fetch(`https://git.heroku.com/codebyte-inotebook.git/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
