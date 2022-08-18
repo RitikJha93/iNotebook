@@ -1,6 +1,7 @@
 const express = require('express');
 const connectToMongo = require("./db/db");
 const dotenv = require('dotenv')
+const path = require('path')
 dotenv.config()
 var cors = require('cors')
  
@@ -24,7 +25,7 @@ if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging')
     res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
     });
    }
-   
+
 app.listen(port,()=>{
     console.log("connected to port 5000");
 }) 
