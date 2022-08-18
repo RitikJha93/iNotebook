@@ -8,6 +8,9 @@
       "start": "node index.js",
       "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
+  "engines": {
+    "node": "16.16.0"
+  },
   "author": "ritik",
   "license": "ISC",
   "dependencies": {
