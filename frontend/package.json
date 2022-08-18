@@ -1,7 +1,7 @@
 {
   "name": "inotebook",
   "version": "0.1.0",
-  "proxy":"https://codebyte-inotebook.herokuapp.com/",
+  "proxy":"https://localhost:5000",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",

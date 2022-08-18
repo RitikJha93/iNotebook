@@ -2,7 +2,7 @@ import {React, useState,} from "react";
 import NoteContext from "./NoteContext";
 
 const NoteState = (props)=>{
-  const host = "https://git.heroku.com/codebyte-inotebook.git";
+  // const host = "https://git.heroku.com/codebyte-inotebook.git";
     const noteInitial = []
     const [note,setNote] = useState(noteInitial);
     const [clicked,setClicked] = useState(false)
@@ -17,7 +17,7 @@ const NoteState = (props)=>{
    
     }
     const getNote = async()=>{
-      const response = await fetch(`${host}/api/notes/fetchnotes`, {
+      const response = await fetch(`/api/notes/fetchnotes`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const NoteState = (props)=>{
     }
 
     const addNote = async(title,description)=>{
-      const response = await fetch(`${host}/api/notes/addnote`, {
+      const response = await fetch(`/api/notes/addnote`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const NoteState = (props)=>{
     }
 
     const deleteNote = async(id)=>{
-      const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
+      const response = await fetch(`/api/notes/deletenote/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const NoteState = (props)=>{
     }
     
     const editNote = async(id,title,description)=>{
-      const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
+      const response = await fetch(`/api/notes/updatenote/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

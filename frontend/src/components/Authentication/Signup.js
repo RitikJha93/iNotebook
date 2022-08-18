@@ -15,7 +15,7 @@ const Signup = () => {
 
   const handleClick = async()=>{
     const {name,email,password} = formValues;
-    const response = await fetch(`https://git.heroku.com/codebyte-inotebook.git/api/auth`, {
+    const response = await fetch(`/api/auth`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
